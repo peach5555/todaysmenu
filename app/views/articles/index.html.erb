@@ -1,0 +1,19 @@
+<div class="contents row">
+  <% @articles.each do |article| %>
+    <div class="content_post" >
+      <div class="content_post_image">
+        
+      </div>
+      <div class="content_post_text">
+        <h3 class="text_title"><%= article.title %></h3>
+        <%= simple_format(article.text) %>
+      </div>
+      <!--<span class="name">ユーザーテーブル設置してから-->
+      <!--  <a href="/users/<#%= tweet.usrer.id %>">-->
+      <!--    <span>投稿者</span><#%= tweet.user.nickname %>-->
+      <!--  </a>-->
+      <!--</span>-->
+    </div>
+      
+  <% end %>
+</div>
